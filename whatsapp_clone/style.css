@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Open+Sans&display=swap');
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 62.5%;
+      color: #E9EDEF;
+      font-family: sans-serif;
+}
+
+::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+      background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+      background-color: #374045;
+}
+
+::-webkit-scrollbar-track {
+      background-color: transparent;
+}
+
+body {
+      height: 100vh;
+}
+
+.main {
+      width: 100%;
+}
+
+.left {
+      width: 30%;
+      height: 100vh;
+      float: left;
+      background: #111b21;
+      overflow-y: scroll;
+}
+
+.right {
+      background-image: url('./img/bg.webp');
+      background-size: cover;
+      background-position: top;
+      width: 70%;
+      height: 100vh;
+      float: right;
+      overflow-y: scroll;
+      border-left: 1px solid #3f3f3f;
+
+}
+
+.main::after {
+      clear: both;
+      content: "";
+      display: block;
+}
+
+.left_top {
+      background: #202c33;
+      height: 60px;
+      padding: 10px 16px;
+      position: fixed;
+      width: 30%;
+      z-index: 2232;
+}
+
+.left_top .profile img {
+      width: 40px;
+      padding: 0;
+      border-radius: 50%;
+}
+
+.left_top img {
+      width: 40px;
+      padding: 8px;
+}
+
+.profile {
+      float: left;
+}
+
+.nav {
+      float: right;
+}
+
+.right_top {
+      background: #202c33;
+      height: 60px;
+      padding: 10px 16px;
+      position: fixed;
+      width: 70%;
+      z-index: 2232;
+}
+
+.right_top img {
+      width: 40px;
+      padding: 8px;
+
+}
+
+.profile {
+      float: left;
+}
+
+.nav {
+      float: right;
+}
+
+.contact {
+      position: relative;
+      top: 60px;
+
+}
+
+.list_1 {
+      height: 74px;
+      border-bottom: 1px solid #4a4a4a;
+      border-top: 1px solid #4a4a4a;
+      cursor: pointer;
+}
+
+.list_1:hover {
+      background: #202c33;
+}
+
+.list_1 .profile_img {
+      float: left;
+      width: 78px;
+}
+
+.list_1 img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin: 10px 15px 10px 13px;
+}
+
+.list_1 .data {
+      float: left;
+      width: calc(100% - 78px);
+      height: 72px;
+      padding: 14px 15px 14px 0px;
+
+}
+
+.data .user_name {
+      height: 22px;
+      margin-bottom: 7em;
+
+}
+
+.data span.name {
+      font-size: 1.7rem;
+      float: left;
+      display: block;
+      /* line-height: 1em; */
+}
+
+.data span.time {
+      float: right;
+      display: block;
+      color: rgb(143, 143, 143);
+      padding-top: .2em;
+      font-size: 1.4rem;
+}
+
+.user_name::after {
+      clear: both;
+      content: "";
+      display: block;
+}
+
+.last_chat {
+      height: 20px;
+}
+
+.last_chat p {
+      color: rgb(146, 146, 146);
+      font-size: 1.4rem;
+}
+
+.right_bottom {
+      width: 70%;
+      height: 62px;
+      background: #202c33;
+      position: relative;
+      top: 100%;
+      transform: translateY(-100%);
+      position: fixed;
+}
+
+.right_bottom input {
+      display: block;
+      background: #2a3942;
+      outline: none;
+      border: none;
+      border-radius: .7em;
+      height: 39.5;
+      width: calc(100% - 40px);
+      padding: 9px 12px 11px 12px;
+      font-size: 1.5rem;
+      margin: 12px auto;
+}
+
+.right_bottom .input {
+      width: calc(100% - 60px);
+      height: 62px;
+      float: left;
+}
+
+div.btn {
+      float: left;
+      width: 60px;
+      height: 62px;
+      padding: 11.25px 0px;
+}
+
+.right_bottom button {
+      border: none;
+      outline: none;
+      background: transparent;
+      display: inline-block;
+      width: 39.5px;
+      height: 39.5px;
+      cursor: pointer;
+}
+
+.right_bottom button img {
+      width: 100%;
+      height: 100%;
+}
+
+.right .message {
+      position: relative;
+      top: 62px;
+      padding-bottom: 80px;
+      font-size: 5rem
+}
